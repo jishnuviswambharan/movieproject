@@ -1,0 +1,131 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+
+.card-1 {
+    width: calc(22% - 10px); /* Change the width of the card here */
+    height: 350px; /* Change the height of the card here */
+     /* Border color */
+    border-radius: 10px;
+    padding: 8px; /* Padding around the content */
+    box-shadow: 0 0 10px rgba(238, 17, 17, 0.1);
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border-color: none;
+    background-color: rgb(225, 225, 225);
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.card-1 img {
+    width: 100%; /* Image width set to fill the card */
+    height: 260px; /* Automatically adjust image height */
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-title {
+    margin-top: 5px;
+    font-size: 15px;
+    /* margin-bottom: 3px; */
+}
+
+
+.my_img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
+}
+
+.header {
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    color: white;
+    margin: 0;
+}
+
+.add_movie {
+    display: flex;
+}
+
+.add_movie button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Add margin to separate buttons */
+}
+
+.add_movie button:hover {
+    background-color: #2980b9;
+}
+
+.movie-details {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #1be0ee;
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.movie-details{
+    background-color: lightcyan;
+}
+
+.container{
+    width: 100%;
+}
+
+.row{
+    width: 100%;
+}
+
+.img_details{
+    justify-content: center;
+}
+
+.my_button{
+    border-radius: 20px;
+    background-color:green;
+    text-decoration: none;
+
+}
+
+.my_button:hover{
+    background-color: red;
+}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="card-container">
+
+    {% for i in movie_list %}
+        <div class="card-1" > <!---product card settings--->
+            <a href=""><img class= "card-img-top my_image" src="{{ i.img.url }}" alt="{{ product.name }}" style="align-items: center;margin-top: 20px;border-radius: 20px;"></a>
+            <div class="card-content">
+                <h2 class="card-title">{{i.name}}</h2>
+            </div>
+            <a class="product-button" href="{% url 'movieapp:details' i.id %}">View More</a>
+            <!-- <button onclick="location.href= class="product-button">View More</button> -->
+        </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}

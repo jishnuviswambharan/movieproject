@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+<!-- {{list1.name}}<br>
+{{list1.decs}}<br>
+{{list1.year}}<br>
+<img src={{list1.img.url}} width="200" height="200">
+
+
+
+<h6><a href="#">Edit Details</a></h6>
+<button>Edit Details</button> -->
+
+<!-- <div class="header">
+    <div class="heading">
+        <h2>{{list1.name}} - Movie Detail</h2>
+    </div>
+    <div class="add_movie">
+        <button class="link-button" onclick="window.location.href='update/<int:id>'">Edit Movie</button>
+        <button class="link-button" onclick="window.location.href='/delete/{{ movie.id }}'">Delete Movie</button>
+        <button class="button" onclick="window.location.href='/'">HOME</button>
+
+    </div>
+</div>
+<div class="movie-details">
+    <img src="{{list1.img.url}}" width="100" height="100">
+    <p>Genre: {{ movie.genre }}</p>
+    <p>Release Date: {{ movie.release_date }}</p>
+    <p>Synopsis: {{ movie.synopsis }}</p>
+</div> -->
+
+<!-- <div class="card">
+    <img class="my_img" src="{{ list1.img.url}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{list1.name}}</h5>
+      <p class="card-text">{{list1.desc}}</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div> -->
+<!-- <div class="container">
+    <div class="row col-md-6 col-md-6">
+   <div class="movie-details">
+        <h3>{{list1.name}}</h3>
+        <img src="{{ list1.img.url}}" width="300" height="300">
+        
+    </div>
+    <div class="movie-details">
+        <p>Release Date: {{ list1.year }}</p>
+        <p>Details : {{ list1.decs }}</p>
+      </div>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="movie-details">
+                <h3>{{ list1.name }}</h3>
+                <img class= "img_details" src="{{ list1.img.url }}" width="400px%" height="400px" alt="{{ list1.name }}">
+                <!-- <p>Genre: {{ movie.genre }}</p> -->
+            </div>
+        </div>
+        <div class="col-md-6">
+            
+            <div class="movie-details">
+                <h4>Details</h4>
+                <p>Release Date: {{ list1.year }}</p>
+                <p>Details: {{ list1.decs }}</p>
+                <button class="my_button" href='' >Edit Movie</button>
+            <button class="my_button" onclick="window.location.href='/delete/{{ list1.id }}'">Delete Movie</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
